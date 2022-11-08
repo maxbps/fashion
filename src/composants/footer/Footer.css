@@ -3,3 +3,8 @@
   border-top: 1px;
   border-top-style: solid;
 }
+
+footer li:hover{
+  font-weight: 500;
+  cursor: pointer;
+}

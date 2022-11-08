@@ -6,7 +6,7 @@ import "./Footer.css";
 function Footer() {
   // #region [INTERFACE]
   return (
-    <section id="footer">
+    <footer id="footer">
       <div className="container-fluid pt-3 bg-light">
         <div className="row align-items-center">
           <div className="col-lg-6 text-center">
@@ -62,7 +62,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
   // #endregion
 }
