@@ -16,7 +16,7 @@ function HalfBox(props) {
         className={`fullScreenBox text-light d-flex ${alignment ? "text-end" : "text-start"}`}
       >
         <div className="align-self-center full">
-        <h2 className="display-1">{title ? title : "Titre"}</h2>
+        {title ?  <h2 className="display-1">{title}</h2> : null}
         {text ? <p className="display-4">{text}</p> : null}
         </div>
       </div>
