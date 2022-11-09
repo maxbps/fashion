@@ -1,0 +1,15 @@
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+z-index: 1000;
+border-right: 1px;
+border-right-style: solid;
+}
+
+#visibleMenu li:hover {
+  background-color: #f5f5f5;
+  font-weight: 500;
+}

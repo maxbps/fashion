@@ -5,12 +5,12 @@ import "./Box.css";
 
 function Box(props) {
   // #region [INITIALISATION]
-  const { title, text, image } = props;
+  const { id, title, text, image } = props;
   // #endregion
 
   // #region [INTERFACE]
   return (
-    <section className="containerBox">
+    <section id={id} className="containerBox">
       <div
         style={{ backgroundImage: "url(" + image + ")" }}
         className="fullScreenBox text-light d-flex"

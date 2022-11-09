@@ -8,12 +8,12 @@ import { default as banner } from "../../assets/banner.mp4";
 
 function HalfBoxVideo(props) {
   // #region [INITIALISATION]
-  const { title, text, image, alignment } = props;
+  const {id, title, text, image, alignment } = props;
   // #endregion
 
   // #region [INTERFACE]
   return (
-    <section className="containerHalfBox col-md-6">
+    <section id={id} className="containerHalfBox col-md-6">
       <div
         className={`fullScreenBox text-light d-flex ${
           alignment ? "text-end" : "text-start"
