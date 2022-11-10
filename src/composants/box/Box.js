@@ -1,12 +1,14 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+
+// Import des composants
+import { Button } from "../button/Button";
 
 // Import du CSS
 import "./Box.css";
 
 function Box(props) {
   // #region [INITIALISATION]
-  const { id, title, text, image } = props;
+  const { id, title, text, image, button } = props;
   // #endregion
 
   // #region [INTERFACE]
@@ -19,9 +21,7 @@ function Box(props) {
         <div className="align-self-center full">
           <h2 className="display-1">{title ? title : "Titre"}</h2>
           {text ? <p className="display-4">{text}</p> : null}
-          <button type="button" className="btn btn-outline-dark m-3">
-            <Link to={"/Detail"} className="">En savoir plus</Link>
-          </button>
+          {button ? <Button link={button} /> : null}
         </div>
       </div>
     </section>

@@ -83,7 +83,7 @@ function Accueil() {
         </div>
       )}
       <Banner />
-      <Box id={"box1"} title="c est un titre" image={femme1} text="texte" />
+      <Box id={"box1"} title="c est un titre" image={femme1} text="texte" button="/detail" />
       <div className="container-fluid">
         <div className="row">
           <HalfBox
