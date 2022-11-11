@@ -14,6 +14,13 @@ import { Footer } from "../composants/footer/Footer";
 // Import des Assets
 import { default as list } from "../assets/icons/list.svg";
 import { default as femme1 } from "../assets/femme1.jpg";
+import { default as box1 } from "../assets/box1.jpg";
+import { default as halfBoxvideo1 } from "../assets/halfBoxvideo1.mp4";
+import { default as halfBoxvideo2 } from "../assets/halfBoxvideo2.mp4";
+import { default as box2 } from "../assets/box2.jpg";
+import { default as halfBox1 } from "../assets/halfBox1.jpg";
+import { default as halfBox2 } from "../assets/halfBox2.jpg";
+import { default as box3 } from "../assets/box3.jpg";
 
 // Import du CSS
 import "./Accueil.css";
@@ -64,6 +71,7 @@ function Accueil() {
     slideInTop("#box2", 0, 3);
     slideInTop("#halfBox2-1", 0, 3);
     slideInTop("#halfBox2-2", 0, 3);
+    slideInTop("#box3", 0, 3);
   }, []);
   // #endregion
 
@@ -83,44 +91,51 @@ function Accueil() {
         </div>
       )}
       <Banner />
-      <Box id={"box1"} title="c est un titre" image={femme1} text="texte" button="/detail" />
+      <Box
+        id={"box1"}
+        title="c est un titre"
+        image={box1}
+        text="text"
+        button="/detail"
+      />
       <div className="container-fluid">
         <div className="row">
           <HalfBox
             id={"halfBox1-1"}
             title="c est un titre"
-            image={femme1}
+            image={halfBox1}
             text="texte"
             alignment={0}
           />
           <HalfBoxVideo
             id={"halfBox1-2"}
             title="c est un titre"
-            image={femme1}
+            video={halfBoxvideo1}
             text="texte"
             alignment={1}
           />
         </div>
       </div>
-      <Box id={"box2"} title="c est un titre" image={femme1} text="texte" />
+      <Box id={"box2"} title="c est un titre" image={box2} text="texte" />
       <div className="container-fluid">
         <div className="row">
           <HalfBoxVideo
-          id={"halfBox2-1"}
+            id={"halfBox2-1"}
             title="c est un titre"
-            image={femme1}
+            video={halfBoxvideo2}
             text="texte"
             alignment={0}
           />
           <HalfBox
-          id={"halfBox2-2"}
+            id={"halfBox2-2"}
             title="c est un titre"
-            image={femme1}
+            image={halfBox2}
             text="texte"
             alignment={1}
           />
         </div>
       </div>
+      <Box id={"box3"} title="c est un titre" image={box3} text="texte" />
       <Footer />
     </div>
   );

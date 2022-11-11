@@ -3,12 +3,9 @@ import React from "react";
 // Import du CSS
 import "./HalfBox.css";
 
-// Import des Assets
-import { default as banner } from "../../assets/banner.mp4";
-
 function HalfBoxVideo(props) {
   // #region [INITIALISATION]
-  const {id, title, text, image, alignment } = props;
+  const {id, title, text, video, alignment } = props;
   // #endregion
 
   // #region [INTERFACE]
@@ -30,7 +27,7 @@ function HalfBoxVideo(props) {
           muted="muted"
           loop="loop"
         >
-          <source src={banner} type="video/mp4"></source>
+          <source src={video} type="video/mp4"></source>
         </video>
       </div>
     </section>
